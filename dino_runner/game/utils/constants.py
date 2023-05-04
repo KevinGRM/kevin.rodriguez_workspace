@@ -5,8 +5,8 @@ import os
 TITLE = "Chrome Dino Runner"
 SCREEN_HEIGHT = 600
 SCREEN_WIDTH = 1100
-FPS = 30
 GAMES_SPEED=20
+FPS = 30
 IMG_DIR = os.path.join(os.path.dirname(__file__), "..", "assets")
 
 # Assets Constants
@@ -50,15 +50,11 @@ SMALL_CACTUS = [
     pygame.image.load(os.path.join(IMG_DIR, "Cactus/SmallCactus1.png")),
     pygame.image.load(os.path.join(IMG_DIR, "Cactus/SmallCactus2.png")),
     pygame.image.load(os.path.join(IMG_DIR, "Cactus/SmallCactus3.png")),
-    pygame.image.load(os.path.join(IMG_DIR, "Cactus/SmallCactus4.png")),
-    pygame.image.load(os.path.join(IMG_DIR, "Cactus/SmallCactus5.png")),
 ]
 LARGE_CACTUS = [
     pygame.image.load(os.path.join(IMG_DIR, "Cactus/LargeCactus1.png")),
     pygame.image.load(os.path.join(IMG_DIR, "Cactus/LargeCactus2.png")),
     pygame.image.load(os.path.join(IMG_DIR, "Cactus/LargeCactus3.png")),
-    pygame.image.load(os.path.join(IMG_DIR, "Cactus/LargeCactus4.png")),
-    pygame.image.load(os.path.join(IMG_DIR, "Cactus/LargeCactus5.png")),
 ]
 
 BIRD = [
@@ -70,12 +66,21 @@ CLOUD = pygame.image.load(os.path.join(IMG_DIR, 'Other/Cloud.png'))
 SHIELD = pygame.image.load(os.path.join(IMG_DIR, 'Other/shield.png'))
 HAMMER = pygame.image.load(os.path.join(IMG_DIR, 'Other/hammer.png'))
 
+DINO_START = pygame.image.load(os.path.join(IMG_DIR, "Dino/DinoStart.png"))
+
+DINO_FALL = pygame.image.load(os.path.join(IMG_DIR, "Dino/Dino_DX.png"))
+
 BG = pygame.image.load(os.path.join(IMG_DIR, 'Other/Track.png'))
+
+BG_2 =pygame.image.load(os.path.join(IMG_DIR, 'Other/Track_2.png'))
+
+BG_3 =pygame.image.load(os.path.join(IMG_DIR, 'Other/Track_3.png'))
 
 HEART = pygame.image.load(os.path.join(IMG_DIR, 'Other/SmallHeart.png'))
 
 DEFAULT_TYPE = "default"
-
+SHIELD_TYPE = "shield"
+HAMMER_TYPE = "hammer"
 FONT_STYLE = "freesansbold.ttf"
 
 COLORS = {

@@ -6,12 +6,11 @@ from game.utils.constants import SMALL_CACTUS, LARGE_CACTUS
 
 class Cactus(Obstacle):
     def __init__(self):
-        cactus = [SMALL_CACTUS, LARGE_CACTUS]
-        cactus_var = random.randint(0, 4)
-        cactus_type = random.choice(cactus)
-        image = cactus_type[cactus_var]
+        CACTUS_IMG = SMALL_CACTUS + LARGE_CACTUS
+        cactus_type = random.randint(0, len(CACTUS_IMG)-1)
+        image = CACTUS_IMG[cactus_type]
         super().__init__(image)
-        if cactus_type == SMALL_CACTUS:
-            self.rect.y = 445  ##405 ##325
+        if cactus_type > 2:
+            self.rect.y = 425                     #**** ( ( - )--- ( - )*( - ) =  +   /   ( + )---- ( + )*( - ) =  - )**** AL PONER MAS ES HACIA LO NEGATIVO  SI PONEMOS MENOS ES HACIA ARRIBA (CUADRO DE CORDENADAS)
         else:
-            self.rect.y = 425 ##385 ##300
+            self.rect.y = 445
